@@ -2,52 +2,132 @@
 <html>
 	<head>
 		<link href="assets/css/style.css" rel="stylesheet" type="text/css"/>
-		<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-		<link href="https://fonts.googleapis.com/css?family=Encode+Sans+Expanded:400,700" rel="stylesheet">
-		<link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
-		<link href="https://fonts.googleapis.com/css?family=Nanum+Gothic" rel="stylesheet">
-		<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
-		<title>My Personal Blog</title>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<title>My Portfolio</title>
+		<script>
+			$(document).ready(function(){
+				$("#phonelink").click(function(){
+					$("#phoneNumber").fadeToggle(1000);
+				});
+				$("#emaillink").click(function(){
+					$("#emailspan").fadeToggle(1000);
+				});
+				$("#githublink").click(function(){
+					$("#githubspan").fadeToggle(1000);
+				});
+				$("#twitterlink").click(function(){;
+					$("#twitterspan").fadeToggle(1000);
+				});
+				$("#facebooklink").click(function(){
+					$("#facebookspan").fadeToggle(1000);
+				});
+				$("#linkedinlink").click(function(){
+					$("#linkedinspan").fadeToggle(1000);
+				});
+			});
+			</script>
 	</head>
 	<body>
 		<div id="header">
 			<div id="banner">
-				<h1>Welcome to my First Personal Blog!</h1>
+				<h1><b>My Online Portfolio</b></h1>
 				<img src="assets/img/link.png" class="link-logo">
-				<blockquote><h3>"My web app development journey has just begun !!"</h3></blockquote><br/>
-				<span id="logo"><a href="https://plus.google.com/u/0/114361935297439830315"><img src="assets/img/email.png" width="50px" height="50px"></a>
-					<a href="https://www.facebook.com/prayogi.tio"><img src="assets/img/facebook.png" width="50px" height="50px"></a>
-					<a href="https://twitter.com/PrayogiZhang"><img src="assets/img/twitter.png" width="50px" height="50px"></a>
-					<a href="https://www.linkedin.com/in/prayogi-tio-20747a131"><img src="assets/img/linkedin.png" width="50px" height="50px"></a>
-					<a href="https://github.com/prayogitio"><img src="assets/img/github.png" width="50px" height="50px"></a>
-				</span>
-			</div>
-			<div id="content-about-me">
-				<p>Who Am I?</p>
-				<div id="box">
-					<span id="my-photo"><img src="assets/img/my_photo.JPG" width="150px" height="240px" class="my-photo"></span>
+				<blockquote><h3>Hi.. My name is <b>Prayogi Tio</b>. I am <b>22</b> years old. <br/>My career objection is to be a <b>great web developer</b>. I am looking for a job as a <b>staff</b> or <b>intern</b>.</h3></blockquote>
+				<h2>You can reach me by: </h2><br/>
+				<div class="row">
+					<a class="col-md-2" id="emaillink"><img src="assets/img/email.png" width="50px" height="50px"><br/><span id="emailspan" style="display:none;">https://plus.google.com/u/0/114361935297439830315</span></a>
+					<a class="col-md-2" id="facebooklink"><img src="assets/img/facebook.png" width="60px" height="60px"><br/><span id="facebookspan" style="display:none;">https://www.facebook.com/prayogi.tio</span></a>
+					<a class="col-md-2" id="twitterlink"><img src="assets/img/twitter.png" width="50px" height="50px"><br/><span id="twitterspan" style="display:none;">https://twitter.com/PrayogiZhang</span></a>
+					<a class="col-md-2" id="linkedinlink"><img src="assets/img/linkedin.png" width="50px" height="50px"><br/><span id="linkedinspan" style="display:none;">https://www.linkedin.com/in/prayogi-tio-20747a131</span></a>
+					<a class="col-md-2" id="githublink"><img src="assets/img/github.png" width="50px" height="50px"><br/><span id="githubspan" style="display:none;">https://github.com/prayogitio</span></a>
+					<a class="col-md-2" id="phonelink"><img src="assets/img/phone.png" width="50px" height="50px"><br/><span id="phoneNumber" style="display:none;">085250995186</span></a>
 				</div>
-				<div id="about-me">
-					Hi! my name is Prayogi Tio. I am from Pontianak, West Borneo. <br/>
-					I am really looking forward to be a full stack web developer.
-				</div>			
+				
+			</div>
+			<div id="content-about-me" class="row">
+				<div class="col-md-6">
+					<h3><b>Who Am I?</b></h3>
+					<div id="box">
+						<span id="my-photo"><img src="assets/img/my_photo.JPG" width="150px" height="240px" class="my-photo"></span>
+					</div>
+					<div id="about-me">
+						<p class="text-center">
+							Adaptive Learner,
+							Willing to lern day and night,
+							Very anthutiast in learning new tools,
+							Full Stack Web Developer
+						</p>
+					</div>			
+				</div>
+				<div class="col-md-6">
+					<h3><b>Education</b></h3>
+					<div id="education" class="text-left">
+						<span class="label label-success">2013 – 2017</span> Bachelor of Computer Science
+						<br/>
+						Graduated in September from STMIK Widya Dharma University, Pontianak
+						<br/>
+							GPA : <em>3.99/4.0</em> - Second top performing student in the Computer Science 	faculty
+						<hr>
+							<span class="label label-success">2010 – 2013</span>	High School
+							Saint Peter’s Senior High School, Pontianak
+						<hr>
+							<span class="label label-success">2007 – 2010</span>	Middle School
+							Saint Peter’s Junior High School, Pontianak
+					</div>		
+					<hr>
+					<h3><b>Work</b></h3>
+					<div id="education" class="text-left">
+						<span class="label label-success">2013 – now</span> I currently working as programmer and administrator at Gaya Motor, Pontianak
+					</div>					
+				</div>
 			</div>
 			<div id="experiments">
-				My Experiments
-				<div id="experiments-logo">
-					<img src="assets/img/android.png" height="100px" width="100px">
-					<img src="assets/img/c++.png" height="90px" width="100px">
-					<img src="assets/img/java.png" height="100px" width="100px">
-					<img src="assets/img/javascript.png" height="100px" width="100px">
-					<img src="assets/img/html5.png" height="100px" width="100px">
-					<img src="assets/img/css.png" height="100px" width="100px">
-					<img src="assets/img/php.png" height="100px" width="140px">
-					<img src="assets/img/postgre.png" height="100px" width="115px">
-					<img src="assets/img/vb.png" height="100px" width="130px">
-					<img src="assets/img/python.png" height="100px" width="100px">
+				<p>My Experiments:</p>
+				<div id="myCarousel" class="carousel slide container" data-ride="carousel">
+					<!-- Wrapper for slides -->
+					<div class="carousel-inner">
+						<div class="item active">
+							<a href="https://aqueous-cove-47771.herokuapp.com/" target="blank"><img src="assets/img/chat_app_ss.png" alt="Chat App" style="width:100%"></a>
+							<h5>(Click the image to visit the website)</h5>
+							<h4 class="text-white">See the Source Code <a href="https://github.com/prayogitio/Chatting-App-using-Socket.io-and-Expressjs" target="blank"><b>Here</b></a></h4>
+						</div>	
+					  	<div class="item">
+							<a href="http://yuhuuarticle.herokuapp.com/" target="blank"><img src="assets/img/article_app_ss.png" alt="Article App" style="width:100%"></a>
+							<h5>(Click the image to visit the website)</h5>
+							<h4 class="text-white">See the Source Code <a href="https://github.com/prayogitio/Article-App" target="blank"><b>Here</b></a></h4>
+						</div>			
+						<div class="item">
+							<a href="https://protected-caverns-46580.herokuapp.com/" target="blank"><img src="assets/img/mytask_app_ss.png" alt="My Task App" style="width:100%"></a>
+							<h5>(Click the image to visit the website)</h5>
+							<h4 class="text-white">See the Source Code <a href="https://github.com/prayogitio/My-Task-App" target="blank"><b>Here</b></a></h4>
+						</div>								
+						<div class="item">
+							<a href="https://myweather-test-app.herokuapp.com/" target="blank"><img src="assets/img/weather_app_ss.png" alt="Weather Station App" style="width:100%"></a>
+							<h5>(Click the image to visit the website)</h5>
+							<h4 class="text-white">See the Source Code <a href="https://github.com/prayogitio/weather_station" target="blank"><b>Here</b></a></h4>
+						</div>		
+						<div class="item">
+							<a href="https://fierce-forest-11443.herokuapp.com" target="blank"><img src="assets/img/validationregex_app_ss.png" alt="Weather Station App" style="width:100%"></a>
+							<h5>(Click the image to visit the website)</h5>
+							<h4 class="text-white">See the Source Code <a href="https://github.com/prayogitio/Validation-Form-RegEx-" target="blank"><b>Here</b></a></h4>
+						</div>			  
+					</div>
+				
+					<!-- Left and right controls -->
+					<a class="left carousel-control" href="#myCarousel" data-slide="prev">
+						<span class="glyphicon glyphicon-chevron-left"></span>
+						<span class="sr-only">Previous</span>
+					</a>
+					<a class="right carousel-control" href="#myCarousel" data-slide="next">
+						<span class="glyphicon glyphicon-chevron-right"></span>
+						<span class="sr-only">Next</span>
+					</a>
 				</div>
 			</div>
-		</div>
+			
 		<footer>copyright &copy; by Prayogi Tio
 		</footer>
 	</body>
