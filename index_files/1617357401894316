@@ -53,7 +53,7 @@ fbq.loadPlugin("automaticmatchingforpartnerintegrations");
 instance.optIn("1617357401894316", "AutomaticMatchingForPartnerIntegrations", true);
 config.set(null, "batching", {"batchWaitTimeMs":501,"maxBatchSize":10});
 config.set(null, "microdata", {"waitTimeMs":500});
-config.set("1617357401894316", "prohibitedSources", {"prohibitedSources":[{"domain":"702962ec26cb6add65eebab8e8ec9c1fa937ed45be43eaa066c2d344759259b2"},{"domain":"c76f87125d3653c485fa4cfaee769a3f245eea4b408f0f8709b62ac7743bbb89"},{"domain":"5c20a07ae531a88ec6f73a8718d9a99eb7558ff3c790405a8a11485878bd75b1"},{"domain":"7d244f32c0b8612fd0d7e85ef7eb6144008da515f82983e06999f067d82a0707"},{"domain":"696598ef04e111d695cfafed586fc087f40ff4594933f86d57801a0291bfc274"}]});
+config.set("1617357401894316", "prohibitedSources", {"prohibitedSources":[{"domain":"702962ec26cb6add65eebab8e8ec9c1fa937ed45be43eaa066c2d344759259b2"},{"domain":"5c20a07ae531a88ec6f73a8718d9a99eb7558ff3c790405a8a11485878bd75b1"},{"domain":"c76f87125d3653c485fa4cfaee769a3f245eea4b408f0f8709b62ac7743bbb89"},{"domain":"7d244f32c0b8612fd0d7e85ef7eb6144008da515f82983e06999f067d82a0707"},{"domain":"696598ef04e111d695cfafed586fc087f40ff4594933f86d57801a0291bfc274"}]});
 fbq.loadPlugin("prohibitedsources");
 instance.optIn("1617357401894316", "ProhibitedSources", true);
 config.set("1617357401894316", "unwantedData", {"blacklisted_keys":{"PageView":{"cd":[],"url":["lat","lng","search_title"]},"ViewContent":{"cd":[],"url":["lng","lat"]}},"sensitive_keys":{}});
